@@ -28,7 +28,7 @@ function preload() {
 
 function setup() {
   //creating canvas
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(displayWidth,displayHeight);
   
   //creating iorn man
   iornMan = createSprite(width/2,height/1.1, 10, 10);
