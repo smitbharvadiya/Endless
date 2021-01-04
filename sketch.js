@@ -133,16 +133,18 @@ function draw() {
       iornMan.visible = true;
     }
   }
-  
-    if(mousePressedOver(startGame)) {
+  if(touches.length>0 || keyDown("SPACE")) {      
       gameState = PLAY;
+      touches = [] 
     }
-    if(mousePressedOver(restart)) {
+  
+    if(touches.length>0 || keyDown("SPACE")) {      
       gameState = PLAY;
       score=0;
+      touches = [] 
     }
  
-
+ 
   drawSprites();
 
   //Displaying instructions
